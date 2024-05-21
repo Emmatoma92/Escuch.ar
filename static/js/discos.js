@@ -48,9 +48,44 @@ const discovery = new disco('Discovery', 'Daft Punk', '2001',
 
 const travelling = new disco('Travelling without Moving', 'Jamiroquai', '1996',
     ["Virtual Insanity", "Cosmic Girl", "Use the Force", "Everyday", "Alright", "High Times", "Drifting Along", "Didjerama", 
-    "Didjital Vibrations", "Travelling Without Moving", "You Are My Love", "Spend a Lifetime", "Do You Know Where You Are Coming From?", "Funktion"],
+    "Didjital Vibrations", "Travelling Without Moving", "You Are My Love", "Spend a Lifetime", "Do U Know Where U Are Coming From", "Funktion"],
     './discos/travelling/travellingwithoutmoving.png', 'e0nJXxBoESA');
 
+const tiffany = new disco("Breakfast At Tiffany's", 'Henry Mancini', '1986',
+    ["Moon River", "Something For Cat", "Sally's Tomato", "Mr. Yunioshi", "The Big Blow Out", "Hub Caps And Tail Lights", "Breakfast At Tiffany's", 
+    "Didjerama", "Latin Golightly", "Holly", "Loose Caboose", "The Big Heist", "Moon River Cha Cha"],
+    './discos/tiffany/breakfast-at-tiffanys.jpg', 'DMeG0pOVDTc');
+
+const rustinpeace = new disco('Rust In Peace', 'Megadeth', '1990',
+    ["Holy Wars...The Punishment Due", "Hangar 18", "Take No Prisoners", "Five Magics", "Poison Was The Cure", "Lucretia", 
+    "Tornado Of Souls", "Dawn Patrol", "Rust In Peace...Polaris"],
+    './discos/rust-in-peace/rust-in-peace.jpg', 'Ti_imhKBjXA');
+
+const queengreatest = new disco('Greatest Hits', 'Queen', '1981',
+    ["Bohemian Rhapsody", "Another One Bites The Dust", "Killer Queen", "Fat Bottomed Girls", "Bicycle Race", "You're My Best Friend", 
+    "Don't Stop Me Now", "Save Me", "Crazy Little Thing Called Love", "Somebody To Love", "Now I'm Here", "Good Old Fashioned Lover Boy", 
+    "Play The Game", "Flash", "Seven Seas Of Rhye", "We Will Rock You", "We Are The Champions"],
+    './discos/queen-greatest-hits/queen-greatest-hits.jpg', 'Vzu5NFVxAV8');
+
+const bossguitar = new disco('Boss Guitar', 'Wes Montgomery', '1963',
+    ["Besame Mucho", "Dearly Beloved", "Days Of Wine And Roses", "The Trick Bag", "Canadian Sunset", "Fried Pies", 
+    "The Breeze And I", "For Heaven's Sake"],
+    './discos/boss-guitar/boss-guitar.jpg', 'A3Yzl08yyVw');
+
+const nutcracker = new disco('The Nutcracker', 'Tchaikovsky', '1989',
+    ["2 March", "4 Dance Scene", "5 Scene And The Grandfather Dance", "6 Scene", "7 Scene", "8 Scene", 
+    "12 Divertissement", "Chocolate (Spanish Dance)", "Coffee (Arabian Dance)", "Tea (Chinese Dance)", "Trepak (Russian Dance)", 
+    "Dance Of The Toy Flutes", "The Clown", "13 Waltz Of The Flowers", "14 Pas De Deux", "15 Closing Waltz And Grand Finale"],
+    './discos/nutcracker/nutcracker.jpg', 'C4wBG8BWbYg');
+
+const sza = new disco("Z", 'SZA', '2014',
+    ["Ur", "Childs Play", "Julia", "Warm Winds", "Hi Jack", "Green Mile", "Babylon", "Sweet November", "Shattered Ring", "Omega"],
+    './discos/sza-z/sza-z.jpg', 'N5BZu6GEXu8');
+
+const toxicity = new disco('Toxicity', 'System of a Down', '2001',
+    ["Prison Song", "Needles", "Deer Dance", "Jet Pilot", "X", "Chop Suey!", "Bounce", "Forest", "ATWA", 
+    "Science", "Shimmy", "Toxicity", "Psycho", "Aerials"],
+    './discos/toxicity/toxicity.jpg', 'nVohJKUiK6o');
     
 function selectedDisc(selDisc) {
 
