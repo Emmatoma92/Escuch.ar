@@ -41,6 +41,17 @@ const nirvunplug = new disco('MTV Unplugged', 'Nirvana', '1994',
     './discos/nirvana-unplugged/nirvana-unplug.webp', 'IAp6bQfTQ20'
 );
 
+const discovery = new disco('Discovery', 'Daft Punk', '2001',
+    ['One More Time', 'Aerodynamic', 'Digital Love', 'Harder, Better, Faster, Stronger', 'Crescendolls', 'Nightvision'
+    , 'Superhéroes', 'High Life', 'Something About Us', 'Voyager', 'Veridis Quo', 'Short Circuit', 'Face to Face', 'Too Long'],
+    './discos/discovery/discovery.png', 'mdw1JeDjWH8');
+
+const travelling = new disco('Travelling without Moving', 'Jamiroquai', '1996',
+    ["Virtual Insanity", "Cosmic Girl", "Use the Force", "Everyday", "Alright", "High Times", "Drifting Along", "Didjerama", 
+    "Didjital Vibrations", "Travelling Without Moving", "You Are My Love", "Spend a Lifetime", "Do You Know Where You Are Coming From?", "Funktion"],
+    './discos/travelling/travellingwithoutmoving.png', 'e0nJXxBoESA');
+
+    
 function selectedDisc(selDisc) {
 
     document.getElementById('albumName').innerText = selDisc["nombre"];
