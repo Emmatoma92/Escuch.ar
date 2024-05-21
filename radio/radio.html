@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reproductor de Radio</title>
+<link rel="stylesheet" href="radio.css">
+</head>
+<body>
+<div id="radio-panel" class="panel-radio">
+  <select name="genero" class="seleccionar-emisora">
+    <option value="Rock">Rock</option>
+    <option value="Pop">Pop</option>
+    <option value="80'">80'</option>
+    <option value="Electronica">Electronica</option>
+    <option value="R&B">R&B</option>
+    <option value="Metal">Metal</option>
+    <option value="Hip Hop - Rap">Hip Hop - Rap</option>
+    <option value="Musica Orquestal">Musica Orquestal</option>
+    <option value="Funk - Soul">Funk - Soul</option>
+    <option value="Jazz">Jazz</option>
+  </select>
+  <img id="imagen-de-genero" src="images/Rock.jpg" alt="imagen-genero" class="imagen-panel">
+  <audio controls class= "reproductor-radio"  id="radio">
+    <source src="http://nashe1.hostingradio.ru/rock-128.mp3" type="audio/mp3">
+    Tu navegador no soporta el elemento de audio.
+  </audio>
+  <button id="boton-radio-panel" class="boton-click" onclick="togglePanel()"> > </button>
+</div>
+<script src="radio.js" defer></script>
+</body>
+</html>
