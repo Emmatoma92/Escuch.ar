@@ -17,10 +17,10 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 200vw; /* Debido a la rotacion tiene que tener mayor tamaño en ancho y alto */
+    width: 300vw; /* Debido a la rotacion tiene que tener mayor tamaño en ancho y alto */
     height: 500vh; /* para que no queden partes vacias a la hora de redimensionar el viewport */
     background-image: url("../logo.png");
-    background-size: 10%; 
+    background-size: 6.5%; 
     background-repeat: repeat;
     opacity: 0.45;
     z-index: -1; 
