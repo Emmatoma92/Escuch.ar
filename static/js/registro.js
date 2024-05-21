@@ -1,22 +1,15 @@
 function validForm() {
     var i = 0
+    var register = document.getElementById('register');
     var nombre = document.getElementById('nombre');
-    var apellido = document.getElementById('apellido');
     var email = document.getElementById('email');
     var contraseña = document.getElementById('contraseña');
+    var gustos = document.getElementById('genprefer');
+    var registrar = document.getElementById('registrar');
 
     if (nombre.value == '') {
         var alerta = ' Nombre';
         i += 1;
-    }
-
-    if (apellido.value == '') {
-        if (i > 0) {
-            alerta += ', Apellido'
-        } else {
-            var alerta = ' Apellido';
-            i += 1;
-        }
     }
 
     if (email.value == '') {
@@ -37,7 +30,33 @@ function validForm() {
         }
     }
 
+    if (gustos.value == '') {
+        if (i > 0) {
+            alerta += ', Preferencias'
+        } else {
+            var alerta = ' Preferencias';
+            i += 1;
+        }
+    }
+
     if (i > 0) {
         alert(`Falta ingresar:` + alerta);
+        return
     }
+
+    // nombre.remove();
+    // apellido.remove();
+    // email.remove();
+    // contraseña.remove();
+    // registrar.remove();
+
+    register.remove();
+    
+    var content = document.getElementById('content');
+    var final = document.createElement('div');
+    final.innerHTML = 'Se registro correctamente';
+    final.id = 'msgFinal';
+    final.style.color = '#ffffff';
+    final.style.fontSize = '4em';
+    content.appendChild(final);
 }
