@@ -88,6 +88,15 @@ nav li a:hover {
     transition: 0.2s;
 }
 
+.info {
+    padding: 2vw;
+    background-color: #4896d6dc;
+    width: 80%;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+}
+
 @media screen and (max-width: 935px) {
     header {
         position: sticky;
