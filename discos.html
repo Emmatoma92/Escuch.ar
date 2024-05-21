@@ -18,7 +18,7 @@
 <body>
 
     <div class="background"></div>
-    
+
     <header>
         <section class="nav-section">
             <a href="index.html">
@@ -71,11 +71,34 @@
         </div>
     </div>
 
+    <div id="radio-panel" class="panel-radio">
+        <select name="genero" class="seleccionar-emisora">
+            <option value="Rock">Rock</option>
+            <option value="Pop">Pop</option>
+            <option value="80'">80'</option>
+            <option value="Electronica">Electronica</option>
+            <option value="R&B">R&B</option>
+            <option value="Metal">Metal</option>
+            <option value="Hip Hop - Rap">Hip Hop - Rap</option>
+            <option value="Musica Orquestal">Musica Orquestal</option>
+            <option value="Funk - Soul">Funk - Soul</option>
+            <option value="Jazz">Jazz</option>
+        </select>
+        <img id="imagen-de-genero" src="./radio/images/Rock.jpg" alt="imagen-genero" class="imagen-panel">
+        <audio controls class="reproductor-radio" id="radio">
+            <source src="http://nashe1.hostingradio.ru/rock-128.mp3" type="audio/mp3">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+        <button id="boton-radio-panel" class="boton-click" onclick="togglePanel()"> > </button>
+    </div>
+
     <footer>
         <div></div>
     </footer>
+    <script src="./radio/radio.js" defer></script>
     <script src="./static/js/discos.js"></script>
     <link rel="stylesheet" href="./static/styles/discos.css">
+    <link rel="stylesheet" href="./radio/radio.css">
 </body>
 
 </html>

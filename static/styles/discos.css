@@ -180,7 +180,6 @@ nav li a:hover {
     .content {
         display: grid;
         grid-template-columns: 100%;
-        /* grid-template-rows: auto auto auto; */
         grid-template-areas: 'listadiscos'
                             'detalledisco'
                             'video';
@@ -188,7 +187,6 @@ nav li a:hover {
         width: 100%;
         color: white;
         margin: 0px;
-        transition: 0.5s;
     }
 
     .nav-section {
