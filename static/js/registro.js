@@ -5,7 +5,6 @@ function validForm() {
     var email = document.getElementById('email');
     var contraseña = document.getElementById('contraseña');
     var gustos = document.getElementById('genprefer');
-    var registrar = document.getElementById('registrar');
 
     if (nombre.value == '') {
         var alerta = ' Nombre';
@@ -44,17 +43,27 @@ function validForm() {
         return
     }
 
-    // nombre.remove();
-    // apellido.remove();
-    // email.remove();
-    // contraseña.remove();
-    // registrar.remove();
-
     register.remove();
-    
+
     var content = document.getElementById('content');
     var final = document.createElement('div');
     final.innerHTML = 'Se registro correctamente';
     final.id = 'msgFinal';
     content.appendChild(final);
 }
+
+const defaultFile = "./static/img/avatar.png"
+const file = document.getElementById('avatar');
+const img = document.getElementById('imgAvatar');
+
+file.addEventListener('change', e => {
+    if (e.target.files[0]) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+            img.src = e.target.result;
+        }
+        reader.readAsDataURL(e.target.files[0])
+    } else {
+        img.src = defaultFile;
+    }
+});

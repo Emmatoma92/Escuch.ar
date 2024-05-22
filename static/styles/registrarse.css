@@ -4,29 +4,32 @@ body {
     font-optical-sizing: auto;
     font-weight: 1em;
     font-style: normal;
-     font-variation-settings:
+    font-variation-settings:
         "width" 100;
     height: 100%;
     margin: 0;
     position: relative;
     z-index: 1;
+    display: grid;
 }
 
 .background {
     position: fixed;
     top: 0;
     left: 0;
-    width: 300vw; /* Debido a la rotacion tiene que tener mayor tamaño en ancho y alto */
-    height: 500vh; /* para que no queden partes vacias a la hora de redimensionar el viewport */
+    width: 300vw;
+    /* Debido a la rotacion tiene que tener mayor tamaño en ancho y alto */
+    height: 500vh;
+    /* para que no queden partes vacias a la hora de redimensionar el viewport */
     background-image: url("../logo.png");
-    background-size: 6.5%; 
+    background-size: 6.5%;
     background-repeat: repeat;
     opacity: 0.45;
-    z-index: -1; 
-    pointer-events: none; 
-    transform: rotate(-20deg); 
-    transform-origin: 0 100vw; 
-    margin: -50%; 
+    z-index: -1;
+    pointer-events: none;
+    transform: rotate(-20deg);
+    transform-origin: 0 100vw;
+    margin: -50%;
 }
 
 header {
@@ -38,7 +41,7 @@ header a {
     text-decoration: none;
 }
 
-.nav-section  {
+.nav-section {
     margin: auto;
     width: 60%;
     height: 100%;
@@ -116,6 +119,26 @@ form input, #genprefer {
     border-radius: 4px;
 }
 
+form img {
+    width: 200px;
+    border-radius: 50%;
+    border: 6px solid #AAA;
+}
+
+#avatar {
+    display: none;
+}
+
+.avatar {
+    display: grid;
+    justify-items: center;
+    width: 60%;
+}
+
+form label {
+    color: #cfc755;
+}
+
 label {
     color: #000000;
     font-size: 1.3em;
@@ -155,6 +178,7 @@ form input[type=radio] {
     .nav-section {
         margin: 0px;
         width: 100%;
+        height: 60%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -199,7 +223,7 @@ form input[type=radio] {
     #discos {
         display: block;
         grid-column: 3 / 4;
-   }
+    }
 
     nav li a {
         font-size: calc(15px + 1vw);
@@ -216,4 +240,3 @@ form input[type=radio] {
         text-align: center;
     }
 }
-

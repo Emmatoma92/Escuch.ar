@@ -38,9 +38,6 @@
 
     <div class="content" id="content">
         <section class="register" id="register">
-
-            <br><br><br>
-
             <form action="javascript:validForm()" autocomplete="off" method="post">
                 <input type="text" id="nombre" name="nombre" placeholder="Apellido y Nombre">
                 <input type="email" id="email" name="email" placeholder="Correo electrónico">
@@ -62,7 +59,13 @@
                     <option value="Funk">Funk - Soul</option>
                     <option value="Jazz">Jazz</option>
                 </select>
-                <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg"/>
+                <div class="avatar">
+                    <img src="./static/img/avatar.png" alt="avatar" id="imgAvatar" />
+                    <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg"
+                        placeholder="Seleccione imagen">
+                    <label for="avatar">Cambiar foto</label>
+                </div>
+
                 <input type="submit" id="registrar" name="registrarse" value="Registrate">
             </form>
         </section>
