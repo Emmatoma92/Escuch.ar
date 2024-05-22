@@ -56,7 +56,5 @@ function validForm() {
     var final = document.createElement('div');
     final.innerHTML = 'Se registro correctamente';
     final.id = 'msgFinal';
-    final.style.color = '#ffffff';
-    final.style.fontSize = '4em';
     content.appendChild(final);
 }
