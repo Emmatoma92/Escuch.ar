@@ -16,10 +16,10 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 200vw; /* Debido a la rotacion tiene que tener mayor tamaño en ancho y alto */
+    width: 300vw; /* Debido a la rotacion tiene que tener mayor tamaño en ancho y alto */
     height: 500vh; /* para que no queden partes vacias a la hora de redimensionar el viewport */
     background-image: url("../logo.png");
-    background-size: 10%; 
+    background-size: 6.5%; 
     background-repeat: repeat;
     opacity: 0.45;
     z-index: -1; 
@@ -106,7 +106,7 @@ form {
     height: auto;
 }
 
-form input, select {
+form input, #genprefer {
     display: block;
     height: 60px;
     width: 60%;
@@ -130,6 +130,19 @@ form input[type=radio] {
 #registrarse {
     width: 40%;
     color: #27374D;
+}
+
+#msgFinal {
+    position: absolute;
+    top: 200%;
+    left: 5%;
+    padding: 2vw;
+    background-color: #72d638d3;
+    width: 80%;
+    color: white;
+    font-size: 1.5vw;
+    text-align: center;
+    margin: 0 auto;
 }
 
 @media screen and (max-width: 935px) {
@@ -183,7 +196,7 @@ form input[type=radio] {
         grid-column: 2 / 3;
     }
 
-   #discos {
+    #discos {
         display: block;
         grid-column: 3 / 4;
    }
@@ -191,4 +204,16 @@ form input[type=radio] {
     nav li a {
         font-size: calc(15px + 1vw);
     }
+
+    #msgFinal {
+        position: absolute;
+        top: 250%;
+        left: 7.5%;
+        padding: 2vw;
+        width: 80%;
+        color: white;
+        font-size: 3.2vw;
+        text-align: center;
+    }
 }
+
