@@ -229,6 +229,10 @@ form input[type=radio] {
         display: inline-flex;
     }
     
+    form label {
+        font-size: 1em;
+    };
+
     .avatar {
         width: 100%;
     }
