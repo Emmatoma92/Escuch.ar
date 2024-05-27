@@ -218,4 +218,8 @@ nav li a:hover {
         border-top: solid;
         margin: 5px;
     }
+
+    .listadiscos {
+        margin: 15px;
+    }
 }
