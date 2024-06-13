@@ -42,15 +42,25 @@ function validForm() {
         alert(`Falta ingresar:` + alerta);
         return
     }
+    
+    post = {'nombre': nombre, 
+            'email': email, 
+            'contraseña': contraseña, 
+            'genprefer': gustos}
 
-    register.remove();
+    register.style.display = "none";
 
     var content = document.getElementById('content');
     var final = document.createElement('div');
     final.innerHTML = 'Se registro correctamente';
     final.id = 'msgFinal';
     content.appendChild(final);
-}
+
+    $.post( "/registro-exitoso", {
+        javascript_data: JSON.stringify(post) 
+    });
+
+};
 
 const defaultFile = "./static/img/avatar.png"
 const file = document.getElementById('avatar');

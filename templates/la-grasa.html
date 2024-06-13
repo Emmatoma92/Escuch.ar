@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,17 +10,12 @@
     <link rel="icon" type="image/png" sizes="16x16" href="../../static/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Noto+Sans+Lao+Looped:wght@100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Noto+Sans+Lao+Looped:wght@100..900&display=swap" rel="stylesheet">
 </head>
-
 <body>
     <header>
         <section class="nav-section">
-            <a href="../../index.html">
-                <h1 class="logo"> Escuch.ar </h1>
-            </a>
+            <a href="/"> <h1 class="logo"> Escuch.ar </h1> </a>
             <nav class="main-nav">
                 <ul>
                     <li id="registrarse"> <a href="/registrarse.html"> Registrarse </a> </li>
@@ -38,29 +32,32 @@
     </header>
 
     <div class="content">
+
+        
+
         <section>
-            <h2>Un baión para el ojo idiota</h2>
+            <h2>La Grasa de las Capitales</h2>
         </section>
 
-        <p id="descripción">1988 - Patricio Rey y sus Redonditos de Ricota</p>
+        <p id="descripción">1979 - Serú Girán</p>
 
         <span class="cover">
-            <img alt="imagen-de-album" src="./tapa-un-baion.jpg">
+            <img alt="imagen-de-album" src="{{url_for('static', filename='tapa-la-grasa.jpg')}}">
         </span>
 
         <ol id="song-list">
-            <li>Masacre en el puticlub</li>
-            <li>Noticias de ayer</li>
-            <li>Aquella solitaria vaca cubana</li>
-            <li>Todo preso es político</li>
-            <li>Vencedores vencidos</li>
-            <li>Vamos las bandas</li>
-            <li>Ella debe estar tan linda</li>
-            <li>Todo un palo</li>
+            <li>La Grasa de las Capitales</li>
+            <li>San Francisco y el Lobo</li>
+            <li>Perro Andaluz</li>
+            <li>Frecuencia Modulada</li>
+            <li>Paranoia y Soledad</li>
+            <li>Noche de Perros</li>
+            <li>Viernes 3AM</li>
+            <li>Los Sobrevivientes</li>
+            <li>Canción de Hollywood</li>
         </ol>
+        <footer> Todos los derechos reservados &copy; </footer>
     </div>
 
-
 </body>
-
 </html>

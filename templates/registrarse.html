@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Escuch.ar</title>
-    <link rel="stylesheet" href="./static/styles/registrarse.css">
-    <link rel="stylesheet" href="./radio/radio.css">
+    <link rel="stylesheet" href="../static/styles/registrarse.css">
+    <link rel="stylesheet" href="../static/styles/radio.css">
     <link rel="apple-touch-icon" sizes="180x180" href="./static/favicon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./static/favicon.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./static/favicon.png">
@@ -23,14 +23,14 @@
 
     <header>
         <section class="nav-section">
-            <a href="index.html">
+            <a href="/">
                 <h1 class="logo"> Escuch.ar </h1>
             </a>
             <nav class="main-nav">
                 <ul>
-                    <li id="registrarse"> <a href="./registrarse.html"> Registrarse </a> </li>
-                    <li id="resenas"> <a href="./resenas.html"> Reseñas </a></li>
-                    <li id="discos"> <a href="./discos.html"> Discos </a> </li>
+                    <li id="registrarse"> <a href="./registrarse"> Registrarse </a> </li>
+                    <li id="resenas"> <a href="./resenas"> Reseñas </a></li>
+                    <li id="discos"> <a href="./discos"> Discos </a> </li>
                 </ul>
             </nav>
         </section>
@@ -38,7 +38,7 @@
 
     <div class="content" id="content">
         <div class="register" id="register">
-            <form action="javascript:validForm()" autocomplete="off" method="post">
+            <form action="/registro-exitoso" autocomplete="off" method="post", onsubmit="javascript:validForm()">
                 <input type="text" id="nombre" name="nombre" placeholder="Apellido y Nombre">
                 <input type="email" id="email" name="email" placeholder="Correo electrónico">
                 <input type="password" id="contraseña" name="contraseña" placeholder="Contraseña">
@@ -60,7 +60,7 @@
                     <option value="Jazz">Jazz</option>
                 </select>
                 <div class="avatar">
-                    <img src="./static/img/avatar.png" alt="avatar" id="imgAvatar">
+                    <img src="../static/img/avatar.png" alt="avatar" id="imgAvatar">
                     <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
                     <label for="avatar">Cambiar foto</label>
                 </div>
@@ -83,19 +83,19 @@
             <option value="Funk - Soul">Funk - Soul</option>
             <option value="Jazz">Jazz</option>
         </select>
-        <img id="imagen-de-genero" src="./radio/images/Rock.jpg" alt="imagen-genero" class="imagen-panel">
+        <img id="imagen-de-genero" src="{{url_for('static', filename='Rock.jpg')}}" alt="imagen-genero" class="imagen-panel">
         <audio controls class="reproductor-radio" id="radio">
             <source src="http://nashe1.hostingradio.ru/rock-128.mp3" type="audio/mp3">
             Tu navegador no soporta el elemento de audio.
         </audio>
         <button id="boton-radio-panel" class="boton-click" onclick="togglePanel()"> > </button>
     </div>
-    <script src="./radio/radio.js" defer></script>
+    <script src="../static/js/radio.js" defer></script>
 
     <footer>
         <div></div>
     </footer>
-    <script src="./static/js/registro.js"></script>
+    <script src="../static/js/registro.js"></script>
 </body>
 
 </html>
